@@ -3,7 +3,6 @@
 #include <iostream>
 #include <vector>
 #include <limits>
-#include <string>
 
 
 Movie* FindHighestRatedMovie(vector<Movie*>& movies)
