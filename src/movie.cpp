@@ -2,11 +2,15 @@
 
 
 Movie::Movie(std::string t, std::string d, int r, int i, double rate)
-	: title{ t }, director{ d }, id{ i } 
 {
+	this->title = t;
+	this->director = d;
 
 	if (r < 0){ throw invalid_argument("runtimes cannot be negative"); }
 	else { this->runtime = r; }
+
+	this->id = i;
+
 	if (rate < 0 || rate > 10) { throw invalid_argument("Ratings must be between 0-10"); }
 	else { this->rating = rate; }
 }

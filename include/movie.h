@@ -19,7 +19,6 @@ private:
 	double rating; // range 0-10
 
 public:
-
 	Movie(std::string t, std::string d, int r, int i, double rate);
 
 	std::string GetTitle() const; //returns title
